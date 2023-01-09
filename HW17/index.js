@@ -1,4 +1,5 @@
 function generateKey(length, characters) {
+    if(length < 1) return 'Error: Length < 1';
     let result = '';
 
     while(length) {
@@ -12,6 +13,6 @@ function generateKey(length, characters) {
 const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
 
 if(characters.length) {
-    const key = generateKey(16, characters);
+    const key = generateKey(-2, characters);
     console.log(key);
 }
