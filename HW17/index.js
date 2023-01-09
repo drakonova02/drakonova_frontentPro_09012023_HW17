@@ -1,8 +1,8 @@
-function generateKey(length, array) {
+function generateKey(length, characters) {
     let result = '';
 
     while(length) {
-        result += array[Math.floor(Math.random() * array.length)]
+        result += characters[Math.floor(Math.random() * characters.length)]
         --length;
     }
 
